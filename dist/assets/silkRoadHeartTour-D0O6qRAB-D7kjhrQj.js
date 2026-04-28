@@ -1,1 +1,0 @@
-import"./language-BC7Zw5Zd-BDnQ--tp.js";import{i as e}from"./db-CZQlFadT-cNWH_53A.js";import{t}from"./createTourPage-CjB1n1A_-CgUbDw7k.js";function n(n){t(n,e,`silk-road-heart`)}export{n as renderSilkRoadHeartTour};
