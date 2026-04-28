@@ -1,6 +1,18 @@
 {
   "rewrites": [
     {
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/img/(.*)",
+      "destination": "/img/$1"
+    },
+    {
+      "source": "/fonts/(.*)",
+      "destination": "/fonts/$1"
+    },
+    {
       "source": "/pages/(.*).html",
       "destination": "/pages/$1.html"
     },
@@ -9,5 +21,6 @@
       "destination": "/index.html"
     }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "buildCommand": "npm run build"
 }

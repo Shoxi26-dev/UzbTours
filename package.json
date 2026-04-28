@@ -1,1 +1,15 @@
-{\n  "name": "uzbtours",\n  "version": "1.0.0",\n  "scripts": {\n    "dev": "vite",\n    "build": "vite build",\n    "preview": "vite preview"\n  },\n  "dependencies": {\n    "swiper": "latest"\n  },\n  "devDependencies": {\n    "vite": "latest"\n  }\n}
+{
+  "name": "uzbtours",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "swiper": "latest"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  }
+}

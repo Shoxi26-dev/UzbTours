@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Viaggi autentici in Uzbekistan - онлайн-сервис по бронированию экскурсий без очередей" />
+  <meta name="keywords" content="экскурсии, путешествия, туры, Узбекистан" />
+  <link rel="icon" href="/img/icons/doc-logo.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/fonts/gilroy/stylesheet.css">
+  <link rel="stylesheet" href="/fonts/inter/stylesheet.css">
+  <title>Uzb-Tours - Экскурсии и туры</title>
+  <script type="module" crossorigin src="/assets/language-cuagsy1t-BqeNELpu.js"></script>
+  <script type="module" crossorigin src="/assets/language-bc7zw5zd-CUf_REjO.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/language-cuagsy1t-CCEw35Zz.css">
+</head>
+
+<body>
+
+
+  <section class="glava">
+    <div class="container">
+
+      <nav class="navi" aria-label="Main navigation">
+        <div class="left">
+          <div class="media">
+            <a href="https://www.instagram.com/uzbekistan_con_shah?igsh=YmxvdHNsb2JnZnkx"><img
+                src="/img/icons/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/share/1Agx5Wh4vc/"><img src="/img/icons/facebook.png" alt=""></a>
+          </div>
+          <p>+998991239327</p>
+
+        </div>
+        <div class="middle">
+          <p data-key="header-title">Via Samarcanda</p>
+          <img src="/img/icons/site-logo.png" alt="логотип UzbTours">
+        </div>
+        <button class="burger" aria-label="Меню">☰</button>
+        <div class="right">
+          <a href="/" class="active" data-key="nav-home">Главная</a>
+          <a href="/pages/tours.html" data-key="nav-tours">Экскурсии</a>
+          <a href="/pages/gallery.html" data-key="nav-gallery">Галерея</a>
+          <a href="/pages/about.html" data-key="nav-about">О нас</a>
+          <a href="/pages/contacts.html" data-key="nav-contacts">Контакты</a>
+          <a href="/pages/services.html" data-key="nav-services">Услуги</a>
+          <div class="lang-select-wrap">
+            <button id="lang-toggle" aria-label="Выбор языка">
+              🌍
+            </button>
+            <ul id="lang-dropdown" class="lang-dropdown" style="display:none;">
+              <li data-lang="ru"><img src="/img/flags/ru.svg" alt="Русский"
+                  style="width:22px;vertical-align:middle;"> Русский</li>
+              <li data-lang="en"><img src="/img/flags/en.svg" alt="English"
+                  style="width:22px;vertical-align:middle;"> English</li>
+              <li data-lang="it"><img src="/img/flags/it.svg" alt="Italiano"
+                  style="width:22px;vertical-align:middle;"> Italiano</li>
+            </ul>
+          </div>
+          <script>
+
+            const langToggle = document.getElementById('lang-toggle');
+            const langDropdown = document.getElementById('lang-dropdown');
+            langToggle.addEventListener('click', (e) => {
+              e.stopPropagation();
+              langDropdown.style.display = langDropdown.style.display === 'block' ? 'none' : 'block';
+            });
+            langDropdown.querySelectorAll('li').forEach(li => {
+              li.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const lang = li.dataset.lang;
+                if (lang) {
+                  localStorage.setItem('lang', lang);
+                  location.reload();
+                }
+                langDropdown.style.display = 'none';
+              });
+            });
+            document.addEventListener('click', (e) => {
+              if (langDropdown.style.display === 'block') langDropdown.style.display = 'none';
+            });
+          </script>
+        </div>
+      </nav>
+      <div class="header">
+
+       
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-tour="samarkand-3-days" title="Перейти к туру по Самарканду">
+          <img src="/img/full-size-img/registan.jpg" alt="Тур по Самарканду">
+          <div class="slide-overlay"><h3 data-key="slide-samarkand-title">Тур по Самарканду</h3><p data-key="slide-samarkand-desc">История, архитектура и легенды Регистана.</p></div>
+        </div>
+        <div class="swiper-slide" data-tour="classic-7-days" title="Перейти к туру по Хиве">
+          <img src="/img/full-size-img/khiva.jpg" alt="Тур по Хиве">
+          <div class="slide-overlay"><h3 data-key="slide-khiva-title">Тур по Хиве</h3><p data-key="slide-khiva-desc">Древний город-музей под открытым небом.</p></div>
+        </div>
+        <div class="swiper-slide" data-tour="1001-nights" title="Перейти к туру по Бухаре">
+          <img src="/img/full-size-img/gates2.jpg" alt="Тур по Бухаре">
+          <div class="slide-overlay"><h3 data-key="slide-bukhara-title">Тур по Бухаре</h3><p data-key="slide-bukhara-desc">Шелковый путь, медресе и старинные базары.</p></div>
+        </div>
+        <div class="swiper-slide" data-tour="silk-road-heart" title="Перейти к туру по Шелковому пути">
+          <img src="/img/full-size-img/gates.jpg" alt="Тур по Шелковому пути">
+          <div class="slide-overlay"><h3 data-key="slide-silk-road-title">Шелковый путь</h3><p data-key="slide-silk-road-desc">Маршрут сквозь сердца культур Азии.</p></div>
+        </div>
+      </div>
+      <div class="swiper-button-next"><svg data-v-50d1f060="" viewBox="0 0 24 24" fill="var(--gray-15)"
+          xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.18945 20.4983C7.91426 20.1887 7.94215 19.7146 8.25174 19.4394L16.1211 12L8.25173 4.56055C7.94215 4.28536 7.91426 3.81131 8.18945 3.50172C8.46464 3.19213 8.93869 3.16425 9.24828 3.43944L17.7483 11.4394C17.9084 11.5818 18 11.7858 18 12C18 12.2142 17.9084 12.4182 17.7483 12.5605L9.24828 20.5605C8.93869 20.8357 8.46464 20.8079 8.18945 20.4983Z"
+            fill="black"></path>
+        </svg></div>
+      <div class="swiper-button-prev"><svg data-v-50d1f060="" viewBox="0 0 24 24" fill="var(--gray-15)"
+          xmlns="http://www.w3.org/2000/svg" class="ui-icon ">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M15.8106 20.4983C16.0857 20.1887 16.0579 19.7146 15.7483 19.4394L7.8789 12L15.7483 4.56055C16.0579 4.28536 16.0857 3.81131 15.8106 3.50172C15.5354 3.19213 15.0613 3.16425 14.7517 3.43944L6.25173 11.4394C6.09161 11.5818 6 11.7858 6 12C6 12.2142 6.09161 12.4182 6.25173 12.5605L14.7517 20.5605C15.0613 20.8357 15.5354 20.8079 15.8106 20.4983Z"
+            fill="black"></path>
+        </svg></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  
+
+
+        <button id="to-tours" data-key="header-button">К экскурсиям <img src="/img/icons/scroll.png"
+            alt="стрелка вправо"></button>
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="main2">
+        <div class="text">
+          <h3>Популярные экскурсии</h3>
+          <a href="/pages/tours.html">Смотреть все</a>
+        </div>
+        <div class="box">
+          <div class="left2">
+            <div class="text2">
+              <p><b data-key="tour-khiva">Тур по Хиве</b></p>
+              <p class="ots" data-key="tour-khiva-desc">
+                Хива — город-сказка, сохранивший дыхание Востока в каждом переулке.
+
+                Во время экскурсии вы познакомитесь с древними сооружениями внутреннего города: цитаделью Куня Арк,
+                величественным минаретом Кальта Минор XIX века, мавзолеем Пахлавана Махмуда, изысканными медресе и
+                минаретом Ислама Ходжи, мечетью Джума с резными колоннами.
+
+              </p>
+              <button data-key="details">Подробнее</button>
+            </div>
+          </div>
+          <div class="left2">
+            <div class="text2">
+              <p><b data-key="tour-samarkand">Тур по Самарканду</b></p>
+              <p class="ots" data-key="tour-samarkand-desc">Самарканд — город с богатой историей в тысячу лет, где
+                каждая улица пропитана духом
+                великого Востока. Это место, где древние традиции гармонично сочетаются с удивительной архитектурой,
+                создавая неповторимую атмосферу</p>
+              <button data-key="details">Подробнее</button>
+            </div>
+          </div>
+          <div class="left2">
+            <div class="text2">
+              <p><b data-key="tour-bukhara">Тур по Бухаре</b></p>
+              <p class="ots" data-key="tour-bukhara-desc"> Романтическая Бухара — город, где прошлое звучит в каждом
+                камне.
+                Экскурсия начнётся у живописного ансамбля Ляби-Хауз — старинного водоёма, окружённого медресе и вековыми
+                деревьями. Прогулка продолжится под сводами древних купольных базаров, где мастера торгуют ювелирными
+                украшениями, миниатюрами и изделиями ручной работы. </p>
+              <button data-key="details">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="m3">
+    <div class="container">
+      <div class="main3">
+        <div class="about">
+          <div class="text3">
+            <h3 data-key="about-uzbekistan">Об Узбекистане</h3>
+            <p id="fr" data-key="about-desc">
+              Узбекистан — это страна с богатейшей историей, впечатляющей архитектурой и тёплым восточным
+              гостеприимством. Здесь, среди бескрайних пустынь и зелёных оазисов, спрятаны города, которые веками были
+              центрами культуры, торговли и науки: Самарканд, Бухара, Хива.
+
+              Прогуливаясь по узким улочкам древних городов, вы увидите величественные медресе, мечети и минареты,
+              украшенные изразцами и мозаикой. Каждый уголок дышит историей, а легенды о Тамерлане, великом правителе и
+              полководце, оживают в грандиозных памятниках и мавзолеях.
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <h2 class="section-title" data-key="tour-types">Виды экскурсий</h2>
+      <div class="box2">
+        <div class="elem">
+          <div class="icon">
+
+          </div>
+          <div class="text4">
+            <h3 data-key="bus-tour">Автобусный тур</h3>
+            <p data-key="bus-desc">Один из самых насыщенных впечатлениями, доступных по <br> цене и популярных видов
+              отдыха. Во время одной
+              поездки <br> можно посмотреть достопримечательности сразу <br> нескольких городов, причем обойдется это
+              едва ли не в <br> разы дешевле классического экскурсионного тура с <br> ночевками в отелях.</p>
+          </div>
+        </div>
+        <div class="elem">
+          <div class="icon">
+
+          </div>
+          <div class="text4">
+            <h3 data-key="walking-tour">Пеший тур</h3>
+            <p data-key="walking-desc">Идеальный вариант для любителей активного отдыха и погружения в культуру. <br> Вы
+              сможете посетить места,
+              недоступные для автомобилей, и насладиться красотой <br> природы. Наши гиды поделятся интересными
+              историями <br> и проведут вас по скрытым жемчужинам города, <br> которые пропускают большинство туристов.
+            </p>
+          </div>
+        </div>
+        <div class="elem">
+          <div class="icon">
+
+          </div>
+
+          <div class="text4">
+            <h3 data-key="private-tour">Приватный тур</h3>
+            <p data-key="private-desc">Получите персональный сервис и экскурсию, адаптированную под ваши пожелания. <br>
+              Выбирайте маршрут, темп
+              и график, который подходит именно вам. <br> Наше приватные туры идеальны для семей, <br> компаний друзей и
+              деловых групп.</p>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Бургер-меню
+    const burger = document.querySelector('.burger');
+    const navRight = document.querySelector('.right');
+    console.log('Burger:', burger);
+    console.log('NavRight:', navRight);
+    if (burger && navRight) {
+      burger.addEventListener('click', () => {
+        console.log('Burger clicked');
+        navRight.classList.toggle('show');
+      });
+
+      // Закрыть меню при клике вне
+      document.addEventListener('click', (e) => {
+        if (!navRight.contains(e.target) && !burger.contains(e.target)) {
+          navRight.classList.remove('show');
+        }
+      });
+    }
+
+    const toTours = document.getElementById('to-tours');
+    if (toTours) {
+      toTours.addEventListener('click', () => {
+        window.location.href = '/pages/tours.html';
+      });
+    }
+
+    const toToursFooter = document.getElementById('to-tours-footer');
+    if (toToursFooter) {
+      toToursFooter.addEventListener('click', () => {
+        window.location.href = '/pages/tours.html';
+      });
+    }
+
+    document.querySelectorAll('.text2 button').forEach(button => {
+      button.addEventListener('click', () => {
+        window.location.href = '/pages/tours.html';
+      });
+    });
+
+    const heroSwiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+      },
+    });
+
+    document.querySelectorAll('.swiper-slide[data-tour]').forEach(slide => {
+      slide.addEventListener('click', () => {
+        const selectedTour = slide.getAttribute('data-tour');
+        if (selectedTour) {
+          sessionStorage.setItem('selectedTourId', selectedTour);
+          window.location.href = '/pages/tours.html';
+        }
+      });
+    });
+  </script>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 data-key="footer-about">О нас</h3>
+        <ul>
+          <li><a href="/pages/about.html" data-key="footer-our-contacts">Наши контакты</a></li>
+          <li><a href="/pages/about.html" data-key="footer-about-company">О компании</a></li>
+          <li><a href="/pages/about.html" data-key="footer-licenses">Лицензии и сертификаты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-key="footer-services">Услуги</h3>
+        <ul>
+          <li><a href="/pages/services.html" data-key="footer-our-services">Наши услуги</a></li>
+          <li><a href="/pages/services.html#visa" data-key="footer-visa-info">Информация о визе</a></li>
+          <li><a href="/pages/tours.html" data-key="footer-tours">Туры в Узбекистан</a></li>
+          <li><a href="/pages/services.html" data-key="footer-hotels">Отели Узбекистана</a></li>
+          <li><a href="/pages/services.html" data-key="footer-transport">Транспортные услуги</a></li>
+          <li><a href="/pages/services.html" data-key="footer-mice">MICE</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-key="footer-contacts">Контакты</h3>
+        <div class="contact-item"><span data-key="footer-phone-label">📞</span><a href="tel:+998991239327">+998991239327</a></div>
+        <div class="contact-item"><span data-key="footer-email-label">💬</span><a href="mailto:via.samarcanda@gmail.com">via.samarcanda@gmail.com</a></div>
+        <div class="contact-item"><span data-key="footer-email-label">💬</span><a href="mailto:via.samarcanda@gmail.com">via.samarcanda@gmail.com</a></div>
+        <div class="contact-item"><span data-key="footer-address-label">📍</span><span data-key="footer-address">Узбекистан, Самарканд</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-key="footer-copyright">© 2026 Via Samarcanda. Все права защищены.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

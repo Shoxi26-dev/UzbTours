@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фотогалерея Узбекистана — Самарканд, Бухара, Хива, Ташкент">
+    <meta name="keywords" content="галерея, Узбекистан, фото, Самарканд, Бухара, Хива, Ташкент">
+    <link rel="icon" href="/img/icons/doc-logo.png" />
+    <link rel="stylesheet" href="/fonts/gilroy/stylesheet.css">
+    <link rel="stylesheet" href="/fonts/inter/stylesheet.css">
+
+
+    <title>Галерея - Via Samarcanda</title>
+  <link rel="modulepreload" crossorigin href="/assets/language-bc7zw5zd-D2jbA0G8.js">
+  <script type="module" crossorigin src="/assets/gallery-Ce_99RcX.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/language-cuagsy1t-BqeNELpu.js">
+  <link rel="modulepreload" crossorigin href="/assets/language-BC7Zw5Zd-BDnQ--tp.js">
+  <link rel="stylesheet" crossorigin href="/assets/language-cuagsy1t-CCEw35Zz.css">
+  <link rel="stylesheet" crossorigin href="/assets/gallery-BOjRFu8k.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="/" data-key="nav-home">← Главная</a>
+                <span> Via Samarcanda  </span>
+                <strong>Галерея</strong>
+                <div class="lang-select-wrap">
+                    <button id="lang-toggle" aria-label="Выбор языка">🌍</button>
+                    <ul id="lang-dropdown" class="lang-dropdown" style="display:none;">
+                        <li data-lang="ru"><img src="/img/flags/ru.svg" alt="Русский" style="width:22px;vertical-align:middle;"> Русский</li>
+                        <li data-lang="en"><img src="/img/flags/en.svg" alt="English" style="width:22px;vertical-align:middle;"> English</li>
+                        <li data-lang="it"><img src="/img/flags/it.svg" alt="Italiano" style="width:22px;vertical-align:middle;"> Italiano</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-hero">
+            <div class="container">
+                <h1 data-key="gallery-title">Галерея Узбекистана</h1>
+                <p data-key="gallery-subtitle">Красочные и атмосферные фото из Самарканда, Бухары, Хивы и Ташкента.</p>
+            </div>
+        </section>
+
+        <div class="gallery-toolbar">
+            <button class="active" data-filter="all" data-key="gallery-filter-all">Все</button>
+            <button data-filter="samarkand" data-key="gallery-filter-samarkand">Самарканд</button>
+            <button data-filter="bukhara" data-key="gallery-filter-bukhara">Бухара</button>
+            <button data-filter="khiva" data-key="gallery-filter-khiva">Хива</button>
+            <button data-filter="tashkent" data-key="gallery-filter-tashkent">Ташкент</button>
+        </div>
+
+        <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+
+        <div id="gallery-modal" class="gallery-modal" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+            <div class="modal-body">
+                <button type="button" id="modal-close" class="close-btn" aria-label="Закрыть">✕</button>
+                <img id="modal-image" src="" alt="">
+                <p id="modal-caption" style="margin:8px 12px 4px;color:#fff; text-align:center;"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3 data-key="footer-about">О нас</h3>
+                <ul>
+                    <li><a href="/pages/about.html" data-key="footer-our-contacts">Наши контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-key="footer-services">Услуги</h3>
+                <ul>
+                    <li><a href="/pages/services.html" data-key="footer-our-services">Наши услуги</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-key="footer-contacts">Контакты</h3>
+                <div class="contact-item"><span data-key="footer-phone-label">📞</span><a href="tel:+998991239327">+998991239327</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-key="footer-copyright">© 2026 Via Samarcanda. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

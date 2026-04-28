@@ -14,6 +14,10 @@ export default defineConfig({
         contacts: path.resolve(__dirname, 'pages/contacts.html'),
         services: path.resolve(__dirname, 'pages/services.html'),
         'tours-info': path.resolve(__dirname, 'pages/tours-info.html'),
+        '1001-nights': path.resolve(__dirname, 'pages/1001-nights.html'),
+        'classic-7-days': path.resolve(__dirname, 'pages/classic-7-days.html'),
+        'samarkand-3-days': path.resolve(__dirname, 'pages/samarkand-3-days.html'),
+        'silk-road-heart': path.resolve(__dirname, 'pages/silk-road-heart.html'),
       },
       output: {
         entryFileNames: 'assets/[name]-[hash].js',
