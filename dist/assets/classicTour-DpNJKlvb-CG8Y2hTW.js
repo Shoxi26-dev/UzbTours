@@ -1,0 +1,1 @@
+import"./language-BC7Zw5Zd-BDnQ--tp.js";import{a as e}from"./db-CZQlFadT-cNWH_53A.js";import{t}from"./createTourPage-CjB1n1A_-CgUbDw7k.js";function n(n){t(n,e,`classic-7-days`)}export{n as renderClassicTour};
