@@ -21,6 +21,5 @@
       "destination": "/index.html"
     }
   ],
-  "cleanUrls": true,
-  "buildCommand": "npm run build"
+  "cleanUrls": true
 }
